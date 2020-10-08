@@ -1,5 +1,12 @@
 .Browse {
-  margin: 2rem 4rem
+  margin: 2rem 4rem;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.2);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 
 .collapsible {
@@ -17,4 +24,8 @@
 
 .active, .collapsible:hover {
   background-color: #555;
+}
+
+button:expanded ~ .content {
+  display: none
 }

@@ -23,8 +23,7 @@ const NeoDetail = (props) => {
         Feet:<br/>
         Minimum: {props.details.estimated_diameter.feet.estimated_diameter_min} ft<br/>
         Maximum: {props.details.estimated_diameter.feet.estimated_diameter_max} ft<br/>
-
-        Potential Hazard: {props.details.is_potentially_hazardous_asteroid ? 'Yes' : 'No'}
+        Potential Hazard: {props.details.is_potentially_hazardous_asteroid ? 'Yes' : 'No'}<br/>
         Sentry Object: {props.details.is_sentry_object ? 'Yes' : 'No'}
       </div>
     </div>

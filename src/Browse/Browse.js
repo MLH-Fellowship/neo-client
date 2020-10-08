@@ -31,12 +31,10 @@ class Browse extends React.Component {
         {this.state.neos.map(neo => {
           return (
           <div key={neo.id}>
-            <button className='collapsible' expanded={false} onClick={this.handleClick}>
+            <button key={neo.id} className='collapsible' expanded={false} onClick={this.handleClick}>
               {neo.name}
             </button>
-            <div>
-              <NeoDetail details={neo} />
-            </div>
+            <NeoDetail details={neo} />
           </div>
         )})}
       </div>

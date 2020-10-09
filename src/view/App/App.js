@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 
 import CounterContainer from "../Counter/CounterContainer";
+import Browse from "../Browse/Browse";
 
 function App()
 {
@@ -9,6 +10,7 @@ function App()
         <div className="App">
             <header className="App-header">
                 <CounterContainer />
+                <Browse />
             </header>
         </div>
     );

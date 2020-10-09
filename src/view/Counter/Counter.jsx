@@ -4,7 +4,7 @@ const Counter = (props) =>
 {
     return (
         <div>
-            Counter: {props.counter}
+            <h1 className='card-header'> Counter: {props.counter}</h1>
             <br/>
             <button onClick={() => props.onIncrement()}>+</button>
             <button onClick={() => props.onIncrement(5)}>+ 5</button>

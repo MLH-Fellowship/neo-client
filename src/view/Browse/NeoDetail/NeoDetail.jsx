@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './NeoDetail.css'
+import './NeoDetail.scss'
 
 const NeoDetail = (props) => {
   return (

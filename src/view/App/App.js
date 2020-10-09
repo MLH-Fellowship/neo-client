@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 
 import CounterContainer from "../Counter/CounterContainer";
 import Browse from "../Browse/Browse";

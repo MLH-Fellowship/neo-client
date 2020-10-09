@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* By setting the root font size to a percentage (rather than a pixel value),
+the font size will be determined as a percentage of the font size given by the browser.
+This is best practice, so if users accessing the page have a specified font size setting,
+then the font will adjust according the to their specifications.
+This will be considered the root for the rem values.
+Otherwise, the root will stay as the pixel value you provide.
+The default browser font size is 16px, so 62.5% is 10px. */
+html {
+  // This defines what 1rem is.
+  font-size: 62.5%;
+}
+
+/* https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+body {
+  box-sizing: border-box;
+}

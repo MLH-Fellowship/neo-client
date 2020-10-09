@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
-import './Browse.css';
+import './Browse.scss';
 import NeoDetail from './NeoDetail/NeoDetail';
 
 class Browse extends React.Component {

@@ -1,3 +1,5 @@
+@import '../../../public/sass/main.scss';
+
 .Browse {
   margin: 2rem 4rem;
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.2);
@@ -24,8 +26,4 @@
 
 .active, .collapsible:hover {
   background-color: #555;
-}
-
-button:expanded ~ .content {
-  display: none
 }

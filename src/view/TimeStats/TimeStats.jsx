@@ -1,19 +1,15 @@
 import React from 'react';
-import "./TimeStats.scss";
 
-import Clock from "../Clock/Clock";
+import ClockContainer from "../Clock/ClockContainer";
 
-class TimeStats extends React.Component
+const TimeStats = (props) =>
 {
-    render()
-    {
-        return (
-            <div className="TimeStats">
-                <Clock />
-                <p>Data updates every 30 minutes</p>
-            </div>
-        );
-    }
+    return (
+        <div className="TimeStats">
+            <ClockContainer />
+            <p>Data updates every 30 minutes</p>
+        </div>
+    );
 }
 
 export default TimeStats;

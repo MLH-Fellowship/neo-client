@@ -1,12 +1,11 @@
 @import '../../../public/sass/main.scss';
 
-.App
-{
+.App {
     text-align: center;
+    background-color: $color-primary;
 }
 
-.App-header
-{
+.App-header {
     min-height: 100vh;
     display: flex;
     flex-direction: column;

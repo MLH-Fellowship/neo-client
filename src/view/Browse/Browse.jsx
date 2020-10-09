@@ -14,9 +14,10 @@ class Browse extends React.Component {
   }
 
   async componentDidMount() {
-    const {data} = await axios.get(`/api`)
+    const {data} = await axios.get(`/api/browse`)
+    console.log(data)
     this.setState({
-      neos: [...data.neos]
+      neos: [...data.neodata.near_earth_objects]
     })
   }
 
@@ -26,8 +27,8 @@ class Browse extends React.Component {
 
   render() {
     return (
-      <div className='Browse'>
-        <h1>Near Earth Objects</h1>
+      <div className='Browse card col-1-of-4'>
+        <h1 className='card-header'>Browse</h1>
         {this.state.neos.map(neo => {
           return (
           <div key={neo.id}>

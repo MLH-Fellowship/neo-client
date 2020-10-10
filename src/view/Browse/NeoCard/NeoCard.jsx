@@ -7,7 +7,9 @@ const NeoCard = (props) => {
     <div className='NeoCard'>
       <div className="contents">
         <div className='col-1-of-3'>
-          <img src="../../../../public/assets/images/asteroid-human.png" alt="Asteroid with outline of human overlay"/>
+          <img src={process.env.PUBLIC_URL + "/assets/images/asteroid-human.png"} 
+            alt="Asteroid with outline of human overlay"
+            width="100%" height="100%"/>
         </div>
         <div className='col-2-of-3'>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>

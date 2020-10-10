@@ -2,6 +2,29 @@ import React from 'react';
 
 import './NeoCard.scss'
 
+const sizeComparison = {
+  2: 'human',
+  6: 'human-3',
+  10: 'human-5',
+  15: 'bus',
+  45: 'bus-3',
+  50: 'plane',
+  75: 'bus-5',
+  150: 'plane-3',
+  250: 'plane-5',
+};
+
+const sizes = Object.keys(sizeComparison);
+
+const thumbnail = (diameterM) => {
+  let diameter = Math.ceil(diameterM);
+  let i = 0;
+  while (diameter > sizes[i] && i <= sizes.length-1) {
+    i++;
+  }
+  return sizeComparison[sizes[i]];
+};
+
 const NeoCard = (props) => {
   let neoInfo = props.details;
   let estDiameter = neoInfo.estimated_diameter; 

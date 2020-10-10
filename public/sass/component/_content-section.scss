@@ -1,4 +1,6 @@
 .content-section {
+  max-height: 80vh;
+  overflow: auto;
   padding: 1rem 2rem;
   background-image: linear-gradient(to bottom, $color-primary, $color-primary-light);
   border: $border-width solid $border-color;

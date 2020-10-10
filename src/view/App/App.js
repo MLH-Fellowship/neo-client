@@ -2,7 +2,7 @@ import React from 'react';
 import './App.scss';
 
 import TimeStats from "../TimeStats/TimeStats";
-import Browse from "../Browse/Browse";
+import BrowseContainer from "../Browse/BrowseContainer";
 import NeoData from '../NeoData/NeoData';
 import RelatedContent from '../RelatedContent/RelatedContent';
 
@@ -14,7 +14,7 @@ function App()
                 <TimeStats />
             </div>
             <div className="row">
-                <Browse />
+                <BrowseContainer />
                 <NeoData />
                 <RelatedContent />
             </div>

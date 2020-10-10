@@ -6,7 +6,6 @@ import { fetchBrowsedNeos } from "./actions";
 export const fetchBrowsedNeosThunk = (page) => (dispatch) =>
 {
     return axios.get(`/api/browse?page=${page}`)
-    .then(({ data }) => console.log(data))
-    .then((neos) => dispatch(fetchBrowsedNeos(neos)))
+    .then((res) => dispatch(fetchBrowsedNeos(res.data.neos)))
     .catch((err) => console.error(err));
 };

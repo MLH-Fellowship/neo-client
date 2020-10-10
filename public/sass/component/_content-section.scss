@@ -1,6 +1,6 @@
-.card {
+.content-section {
   padding: 1rem 2rem;
-  background-color: $color-primary;
+  background-image: linear-gradient(to bottom, $color-primary, $color-primary-light);
   border: $border-width solid $border-color;
   border-radius: $border-radius;
   -webkit-border-radius: $border-radius;

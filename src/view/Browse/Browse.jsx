@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 
 import './Browse.scss';
-import NeoDetail from './NeoDetail/NeoDetail';
+import NeoCard from './NeoCard/NeoCard';
 
 class Browse extends React.Component {
   constructor(props) {
@@ -27,16 +27,11 @@ class Browse extends React.Component {
 
   render() {
     return (
-      <div className='Browse card col-1-of-4'>
+      <div className='Browse content-section col-1-of-4'>
         <h1 className='card-header'>Browse</h1>
         {this.state.neos.map(neo => {
           return (
-          <div key={neo.id}>
-            <button key={neo.id} className='collapsible' expanded={false} onClick={this.handleClick}>
-              {neo.name}
-            </button>
-            <NeoDetail details={neo} />
-          </div>
+            <NeoCard key={neo.id} details={neo} />
         )})}
       </div>
     )

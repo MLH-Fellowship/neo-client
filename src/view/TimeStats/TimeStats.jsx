@@ -5,7 +5,7 @@ import ClockContainer from "../Clock/ClockContainer";
 const TimeStats = (props) =>
 {
     return (
-        <div className="TimeStats">
+        <div className="TimeStats content-section">
             <ClockContainer />
             <p>Data updates every 30 minutes</p>
         </div>

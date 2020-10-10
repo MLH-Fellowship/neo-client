@@ -5,7 +5,7 @@ import './NeoData.scss';
 class NeoData extends React.Component {
   render() {
     return (
-      <div className="NeoData card col-2-of-4">
+      <div className="NeoData content-section col-2-of-4">
         <h1 className='card-header'>NEO Data</h1>
       </div>
     )

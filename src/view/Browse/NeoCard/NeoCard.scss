@@ -1,0 +1,11 @@
+
+@import "../../../../public/sass/main.scss";
+
+.contents {
+  background-color: $color-primary-light;
+  font-size: $default-font-size;
+  padding: $padding-in-card;
+  overflow: hidden;
+  margin: 1rem auto;
+  width: 20rem
+}

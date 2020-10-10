@@ -2,6 +2,11 @@
   max-width: $grid-width;
   margin: 0 auto;
 
+  /* This selects everything except for the last child. */
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+
   /* This will select all elements where the class attributes begin with "col-". 
         *= indicates includes
         $= indicates ends with */

@@ -28,7 +28,7 @@ class Browse extends React.Component {
   render() {
     return (
       <div className='Browse content-section col-1-of-4'>
-        <h1 className='card-header'>Browse</h1>
+        <h1 className='content-section-header'>Browse</h1>
         {this.state.neos.map(neo => {
           return (
             <NeoCard key={neo.id} details={neo} />

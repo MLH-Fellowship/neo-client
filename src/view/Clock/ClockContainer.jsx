@@ -23,10 +23,12 @@ class ClockContainer extends Component
     render()
     {
         return (
-            <Clock 
-                time={this.props.time}
-                date={this.props.date}
-            />
+            <div className="content-section-header">
+                <Clock 
+                    time={this.props.time}
+                    date={this.props.date}
+                />
+            </div>
         );
     }
 }

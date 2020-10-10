@@ -1,16 +1,9 @@
 @import '../../../public/sass/main.scss';
 
 .App {
+    padding: $gutter-vertical $gutter-horizontal;
     text-align: center;
-    background-color: $color-primary;
+    background-image: linear-gradient(to bottom, $color-primary, $color-primary-light);
     color: white;
-}
-
-.App-header {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
+    height: 100vh;
 }

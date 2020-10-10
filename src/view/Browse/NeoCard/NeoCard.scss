@@ -1,0 +1,16 @@
+
+@import "../../../../public/sass/main.scss";
+
+.contents {
+  background-color: $color-primary-light;
+  font-size: $default-font-size;
+  padding: $padding-in-card;
+  overflow: hidden;
+  margin: 1rem auto;
+  border: $border-width solid $border-color;
+  border-radius: $border-radius;
+  -webkit-border-radius: $border-radius;
+  -moz-border-radius: $border-radius;
+  -ms-border-radius: $border-radius;
+  -o-border-radius: $border-radius;
+}

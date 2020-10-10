@@ -10,14 +10,14 @@ function App()
 {
     return (
         <div className="App">
-            <header className="App-header">
+            <div className="row">
                 <TimeStats />
-                <div className="row">
-                    <Browse />
-                    <NeoData />
-                    <RelatedContent />
-                </div>
-            </header>
+            </div>
+            <div className="row">
+                <Browse />
+                <NeoData />
+                <RelatedContent />
+            </div>
         </div>
     );
 }

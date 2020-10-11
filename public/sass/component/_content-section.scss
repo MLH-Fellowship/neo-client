@@ -10,3 +10,11 @@
   -ms-border-radius: $border-radius;
   -o-border-radius: $border-radius;
 }
+
+a {
+  color: $color-white;
+}
+
+a:hover {
+  color: $color-grey-lighter;
+}

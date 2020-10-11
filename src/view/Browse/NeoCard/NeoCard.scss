@@ -14,15 +14,29 @@
   -ms-border-radius: $border-radius;
   -o-border-radius: $border-radius;
   transition: 0.15s;
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+  -o-transition: 0.15s;
 }
 
-.neo-card:hover
-{
+.neo-card:hover {
   cursor: pointer;
   box-shadow: 0 16px 12px 0 rgba(0,0,0,0.5);
   transform: scale(1.05) translateY(-0.5rem);
   transition: 0.15s;
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+  -o-transition: 0.15s;
   background-color: $color-accent-blue-dark;
+}
+
+.neo-card:active {
+  background-color: $color-accent-blue;
+  transform: scale(1.05) translateY(0.2rem);
+  transition: 0s;
+  -webkit-transition: 0s;
+  -moz-transition: 0s;
+  -o-transition: 0s;
 }
 
 img.neo-card-photo {

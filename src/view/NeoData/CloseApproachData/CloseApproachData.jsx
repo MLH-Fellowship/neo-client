@@ -13,7 +13,7 @@ const CloseApproachData = (props) =>
         <div className="CloseApproachData content-section">
             <h2 className='section-header'>Close Approach Data</h2>
             {cad ?
-            <>
+            <div className='content'>
                 <ul>
                     <li>
                         <div className='col-1-of-2 left'><strong>Close Approach Date Full:</strong></div>
@@ -42,7 +42,7 @@ const CloseApproachData = (props) =>
                     <div className='col-1-of-2 right'>{parseFloat(missDist.astronomical).toLocaleString()} AU | {parseFloat(missDist.lunar).toLocaleString()} LD | {parseFloat(missDist.kilometers).toLocaleString()} km | {parseFloat(missDist.miles).toLocaleString()} mi</div>
                 </p>
                 <p><div className='col-1-of-2 left'><strong>Orbiting Body:</strong></div> <div className='col-1-of-2 right'>{cad.orbiting_body}</div></p> */}
-            </>
+            </div>
             :
                 <p>There is no close approach data available</p>
             }

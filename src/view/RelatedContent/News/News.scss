@@ -3,4 +3,8 @@
 .News {
   height: 34vh;
   background-color: $color-primary-light;
+
+  .content {
+    height: 26vh;
+  }
 }

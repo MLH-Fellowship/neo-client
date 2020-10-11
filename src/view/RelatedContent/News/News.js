@@ -15,15 +15,17 @@ class News extends React.Component {
     return (
       <div className='content-section News'>
         <h1 className='section-header'>News</h1>
-        {this.props.news.length ? 
-          this.props.news.map(article => {
-            return (
-              <Article article={article} />
-            )
-          })
-        :
-          <h2>There are no news available at the moment</h2>
-        }
+        <div className='content'>
+          {this.props.news.length ? 
+            this.props.news.map(article => {
+              return (
+                <Article article={article} />
+              )
+            })
+          :
+            <h2>There are no news available at the moment</h2>
+          }
+        </div>
       </div>
     )
   }

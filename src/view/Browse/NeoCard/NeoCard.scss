@@ -28,6 +28,10 @@
   -moz-transition: 0.15s;
   -o-transition: 0.15s;
   background-color: $color-accent-blue-dark;
+  -webkit-transform: scale(1.05) translateY(-0.5rem);
+  -moz-transform: scale(1.05) translateY(-0.5rem);
+  -ms-transform: scale(1.05) translateY(-0.5rem);
+  -o-transform: scale(1.05) translateY(-0.5rem);
 }
 
 .neo-card:active {

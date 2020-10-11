@@ -36,7 +36,7 @@ const OrbitalData = (props) =>
         <div className="OrbitalData content-section">
             <h2 className='section-header'>Orbital Data</h2>
             {od ?
-            <>
+            <div className='content'>
                 <ul>
                     <li>
                         <div className='col-1-of-2 left'><strong>Orbit ID: </strong></div>
@@ -139,7 +139,7 @@ const OrbitalData = (props) =>
                         <div className='col-1-of-2 right'>{orbitClassDescription}</div>
                     </li>
                 </ul>
-            </>
+            </div>
             :
                 <p>There is no orbital data available</p>
             }

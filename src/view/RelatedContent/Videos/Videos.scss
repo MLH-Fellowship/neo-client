@@ -6,6 +6,10 @@
   margin: 1rem auto;
   height: 34vh;
 
+  .content {
+    height: 26vh;
+  }
+
   iframe {
     width: 100%;
     border-radius: $border-radius;

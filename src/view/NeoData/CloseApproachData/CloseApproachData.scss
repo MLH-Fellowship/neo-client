@@ -3,7 +3,11 @@
 .CloseApproachData {
   background-color: $color-primary-light;
   font-size: $default-font-size;
-  height: 18vh;
+  height: 25vh;
+
+  .content {
+    height: 16vh;
+  }
 
   p {
     display: inline;

@@ -11,9 +11,8 @@ const Article = (props) => {
     <div className='Article'>
       <a href={props.article.url}>
         <img src={props.article.featured_image} alt=''/>
-        <h3 className='news-headline'>{props.article.title}</h3>
-        <p>{props.article.news_site_long}   |   {date(props.article.published_date)}
-        </p>
+        <h3 className='title'>{props.article.title}</h3>
+        <p>{props.article.news_site_long}   |   {date(props.article.published_date)}</p>
       </a>
     </div>
   )

@@ -13,7 +13,7 @@ class News extends React.Component {
 
   render() {
     return (
-      <div className='News content-section'>
+      <div className='content-section News'>
         <h1 className='section-header'>News</h1>
         {this.props.news.length
           ? this.props.news.map(article => {

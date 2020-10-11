@@ -1,0 +1,26 @@
+@import '../../../../public/sass/main.scss';
+
+.Videos {
+  background-color: $color-primary-light;
+  font-size: $default-font-size;
+  margin: 1rem auto;
+  height: 34vh;
+
+  iframe {
+    width: 100%;
+    border-radius: $border-radius;
+  }
+
+  .title {
+    font-size: $default-font-size;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    text-align: left;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    text-align: left;
+  }
+}

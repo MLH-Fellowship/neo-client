@@ -1,0 +1,38 @@
+@import "../../../../../public/sass/main.scss";
+
+.Article {
+  a {
+    text-decoration: none;
+    color: $color-white;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    
+    &:hover {
+      color: $color-accent-blue;
+    }
+  }
+
+  img {
+    width: 100%;
+    border-radius: $border-radius;
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    -ms-border-radius: $border-radius;
+    -o-border-radius: $border-radius;
+  }
+
+  .title {
+    font-size: $default-font-size;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    text-align: left;
+  }
+  
+  p {
+    margin-bottom: .5rem;
+    text-align: left;
+  }
+}

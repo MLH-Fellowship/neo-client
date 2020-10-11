@@ -11,12 +11,9 @@ const sizeComparison = {
   75: 'bus-5',
   80: 'plane',
   240: 'plane-3',
-  325: 'eiffel-tower',
   350: 'plane-5',
   445: 'empire-state-building',
-  975: 'eiffel-tower-3',
   1335: 'empire-state-building-3',
-  1960: 'eiffel-tower-6',
   2670: 'empire-state-building-6',
 };
 

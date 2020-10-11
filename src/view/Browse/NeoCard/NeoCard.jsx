@@ -32,7 +32,7 @@ const NeoCard = (props) => {
   let diameterF = (estDiameter.feet.estimated_diameter_max + estDiameter.feet.estimated_diameter_min) / 2;
 
   return (
-    <div className="neo-card">
+    <div className={`neo-card ${props.selected === neoInfo.id ? 'selected' : ''}`} onClick={props.handleClick}>
       <div className='col-1-of-3'>
         <img src={process.env.PUBLIC_URL + `/assets/images/asteroid-${thumbnail(diameterM)}-192.png`} 
           className="neo-card-photo"

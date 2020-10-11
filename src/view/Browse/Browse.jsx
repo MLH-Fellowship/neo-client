@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './Browse.scss';
-import NeoCard from './NeoCard/NeoCard';
+import NeoCardContainer from './NeoCard/NeoCardContainer';
 
 const Browse = (props) =>
 {
@@ -12,7 +12,7 @@ const Browse = (props) =>
             props.neos.map(neo => 
             {
                 return (
-                    <NeoCard key={neo.id} details={neo} />
+                    <NeoCardContainer key={neo.id} details={neo} />
                 );
             })
             :

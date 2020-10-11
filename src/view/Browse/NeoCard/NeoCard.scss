@@ -54,6 +54,7 @@
 
 img.neo-card-photo {
   background: $color-primary;
+  border: $border-width solid $border-color;
   border-radius: 50%;
   padding: 1rem;
 }

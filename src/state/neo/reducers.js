@@ -13,7 +13,7 @@ const reducer = (state = initialState, action) =>
         case types.FETCH_BROWSED_NEOS:
             return {
                 ...state,
-                neos: action.payload
+                neos: state.neos.concat(action.payload)
             };
         default:
             return state;

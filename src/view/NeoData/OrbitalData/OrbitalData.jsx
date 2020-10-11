@@ -28,9 +28,9 @@ const OrbitalData = (props) =>
     let meanAnomaly = od ? od.mean_anomaly : null;
     let meanMotion = od ? od.mean_motion : null;
     let equinox = od ? od.equinox : null;
-    let orbitClassType = od ? od.orbit_class.orbit_class_type : null;
-    let orbitClassRange = od ? od.orbit_class.orbit_class_range : null;
-    let orbitClassDescription = od ? od.orbit_class.orbit_class_description : null;
+    let orbitClassType = od ? od.orbit_class ? od.orbit_class.orbit_class_type : null : null;
+    let orbitClassRange = od ? od.orbit_class ? od.orbit_class.orbit_class_range : null : null;
+    let orbitClassDescription = od ? od.orbit_class ? od.orbit_class.orbit_class_description : null : null;
 
     return (
         <div className="OrbitalData content-section">

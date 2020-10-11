@@ -9,14 +9,28 @@ class BrowseContainer extends Component
     componentDidMount()
     {
         this.props.fetchBrowsedNeos(0);
+        this.setState({ currentPage: 0 });
+    }
+
+    handleScroll = (event) =>
+    {
+        let element = event.target;
+
+        if(element.scrollHeight - element.scrollTop === element.clientHeight)
+        {
+            this.setState({ currentPage: this.state.currentPage + 1 })
+            this.props.fetchBrowsedNeos(this.state.currentPage);
+        }
     }
 
     render()
     {
         return (
-            <Browse
-                neos={this.props.neos}
-            />
+            <div onScroll={this.handleScroll}>
+                <Browse
+                    neos={this.props.neos}
+                />
+            </div>
         );
     }
 }

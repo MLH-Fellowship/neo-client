@@ -2,21 +2,72 @@ import React from 'react';
 
 import './OrbitalData.scss';
 
-class OrbitalData extends React.Component {
-  render() {
+const OrbitalData = (props) =>
+{
+    let neoInfo = props.selected;
+    let od = neoInfo ? neoInfo.orbital_data : null;
+    let orbitID = od ? od.orbit_id : null;
+    let firstObserveDate = od ? od.first_observation_date : null;
+    let lastObserveDate = od ? od.last_observation_date : null;
+    let orbitObserveDate = od ? od.orbit_observation_date : null;
+    let observesUsed = od ? od.observations_used : null;
+    let dataArcInDays = od ? od.data_arc_in_days : null;
+    let orbitUncertainty = od ? od.orbit_uncertainty : null;
+    let minOrbitIntersect = od ? od.minimum_orbit_intersection : null;
+    let jupiterTissInvar = od ? od.jupiter_tisserand_invariant : null;
+    let epochOsc = od ? od.epoch_osculation : null;
+    let eccentricity = od ? od.eccentricity : null;
+    let semiMajorAxis = od ? od.semiMajorAxis : null;
+    let inclination = od ? od.inclination : null;
+    let ascNodeLong = od ? od.ascending_node_longitude : null;
+    let orbitPeriod = od ? od.orbital_period : null;
+    let periDist = od ? od.perihelion_distance : null;
+    let periArg = od ? od.perihelion_argument : null;
+    let apDist = od ? od.aphelion_distance : null;
+    let periTime = od ? od.perihelion_time : null;
+    let meanAnomaly = od ? od.mean_anomaly : null;
+    let meanMotion = od ? od.mean_motion : null;
+    let equinox = od ? od.equinox : null;
+    let orbitClassType = od ? od.orbit_class.orbit_class_type : null;
+    let orbitClassRange = od ? od.orbit_class.orbit_class_range : null;
+    let orbitClassDescription = od ? od.orbit_class.orbit_class_description : null;
+
     return (
-      <div className="OrbitalData content-section">
-        <h2 className='section-header'>Orbital Data</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas sed tempus urna et pharetra. Nunc consequat interdum varius sit amet mattis vulputate enim. Nec ultrices dui sapien eget mi proin sed libero enim. Egestas sed tempus urna et pharetra pharetra. Sit amet venenatis urna cursus eget nunc scelerisque. Ultrices sagittis orci a scelerisque purus semper eget duis at. Cursus turpis massa tincidunt dui. Venenatis tellus in metus vulputate. Diam donec adipiscing tristique risus nec.</p>
-
-        <p>Adipiscing bibendum est ultricies integer. Ut porttitor leo a diam sollicitudin. Nibh tortor id aliquet lectus proin nibh nisl condimentum. Ac tortor dignissim convallis aenean. Nunc aliquet bibendum enim facilisis gravida neque convallis a cras. Ultrices gravida dictum fusce ut placerat orci. Euismod nisi porta lorem mollis. Eros in cursus turpis massa tincidunt. Habitasse platea dictumst quisque sagittis. Elementum integer enim neque volutpat ac tincidunt vitae semper. Purus sit amet volutpat consequat mauris nunc. Ultrices in iaculis nunc sed augue lacus viverra vitae. Enim tortor at auctor urna nunc id cursus. Mattis vulputate enim nulla aliquet porttitor.</p>
-
-        <p>Ut pharetra sit amet aliquam id diam maecenas. Ridiculus mus mauris vitae ultricies leo integer. Sollicitudin nibh sit amet commodo. Imperdiet sed euismod nisi porta. Lacinia at quis risus sed vulputate odio. Cursus euismod quis viverra nibh cras pulvinar. Sit amet volutpat consequat mauris. Imperdiet sed euismod nisi porta lorem. Felis eget velit aliquet sagittis. Iaculis urna id volutpat lacus laoreet non. Elementum integer enim neque volutpat ac. Imperdiet proin fermentum leo vel. In nisl nisi scelerisque eu ultrices. A pellentesque sit amet porttitor eget dolor. Eu consequat ac felis donec et odio pellentesque diam. Aliquam sem fringilla ut morbi tincidunt augue interdum velit. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Commodo elit at imperdiet dui accumsan. In vitae turpis massa sed elementum tempus.</p>
-
-        <p>Tempus egestas sed sed risus pretium quam. Eget nullam non nisi est sit amet facilisis magna etiam. Purus semper eget duis at tellus. Commodo sed egestas egestas fringilla phasellus. Vel risus commodo viverra maecenas accumsan lacus vel. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu feugiat. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Nisl vel pretium lectus quam. Dolor morbi non arcu risus quis varius. Integer malesuada nunc vel risus.</p>
-      </div>
+        <div className="OrbitalData content-section">
+            <h2 className='section-header'>Orbital Data</h2>
+            {od ?
+            <>
+                <p><strong>Orbit ID: </strong>{orbitID}</p>
+                <p><strong>First Observation Date: </strong>{firstObserveDate}</p>
+                <p><strong>Last Observation Date: </strong>{lastObserveDate}</p>
+                <p><strong>Orbit Observation Date: </strong>{orbitObserveDate}</p>
+                <p><strong>Data Arc in Days: </strong>{dataArcInDays}</p>
+                <p><strong>Observations Used: </strong>{observesUsed}</p>
+                <p><strong>Orbit Uncertainty: </strong>{orbitUncertainty}</p>
+                <p><strong>Minimum Orbit Intersection: </strong>{parseFloat(minOrbitIntersect).toLocaleString()}</p>
+                <p><strong>Jupiter Tisserand Invariant: </strong>{parseFloat(jupiterTissInvar).toLocaleString()}</p>
+                <p><strong>Epoch Osculation: </strong>{parseFloat(epochOsc).toLocaleString()}</p>
+                <p><strong>Eccentricity: </strong>{parseFloat(eccentricity).toLocaleString()}</p>
+                <p><strong>Semi Major Axis: </strong>{parseFloat(semiMajorAxis).toLocaleString()}</p>
+                <p><strong>Inclination: </strong>{parseFloat(inclination).toLocaleString()}</p>
+                <p><strong>Ascending Node Longitude: </strong>{parseFloat(ascNodeLong).toLocaleString()}</p>
+                <p><strong>Orbital Period: </strong>{parseFloat(orbitPeriod).toLocaleString()}</p>
+                <p><strong>Perihelion Distance: </strong>{parseFloat(periDist).toLocaleString()}</p>
+                <p><strong>Perihelion Argument: </strong>{parseFloat(periArg).toLocaleString()}</p>
+                <p><strong>Aphelion Distance: </strong>{parseFloat(apDist).toLocaleString()}</p>
+                <p><strong>Perihelion Time: </strong>{parseFloat(periTime).toLocaleString()}</p>
+                <p><strong>Mean Anomaly: </strong>{parseFloat(meanAnomaly).toLocaleString()}</p>
+                <p><strong>Mean Motion: </strong>{parseFloat(meanMotion).toLocaleString()}</p>
+                <p><strong>Equinox: </strong>{equinox}</p>
+                <p><strong>Orbit Class Type: </strong>{orbitClassType}</p>
+                <p><strong>Orbit Class Range: </strong>{orbitClassRange}</p>
+                <p><strong>Orbit Class Description: </strong>{orbitClassDescription}</p>
+            </>
+            :
+                <p>There is no orbital data available</p>
+            }
+        </div>
     )
-  }
 }
 
 export default OrbitalData;

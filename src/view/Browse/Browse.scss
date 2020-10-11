@@ -1,4 +1,9 @@
 @import '../../../public/sass/main.scss';
 
 .Browse {
+  overflow: auto;
+  
+  .content {
+    height: 70vh;
+  }
 }

@@ -13,18 +13,36 @@ const CloseApproachData = (props) =>
         <div className="CloseApproachData content-section">
             <h2 className='section-header'>Close Approach Data</h2>
             {cad ?
-            <>
-                <p><strong>Close Approach Date Full:</strong> {cad.close_approach_date_full}</p>
+            <div className='content'>
+                <ul>
+                    <li>
+                        <div className='col-1-of-2 left'><strong>Close Approach Date Full:</strong></div>
+                        <div className='col-1-of-2 right'>{cad.close_approach_date_full}</div>
+                        </li>
+                    <li>
+                        <div className='col-1-of-2 left'><strong>Relative Velocity: </strong></div>
+                        <div className='col-1-of-2 right'>{parseFloat(relVel.kilometers_per_second).toLocaleString()} km/s | {parseFloat(relVel.kilometers_per_hour).toLocaleString()} km/h | {parseFloat(relVel.miles_per_hour).toLocaleString()} mph</div>
+                    </li>
+                    <li>
+                        <div className='col-1-of-2 left'><strong>Miss Distance: </strong></div>
+                        <div className='col-1-of-2 right'>{parseFloat(missDist.astronomical).toLocaleString()} AU | {parseFloat(missDist.lunar).toLocaleString()} LD | {parseFloat(missDist.kilometers).toLocaleString()} km | {parseFloat(missDist.miles).toLocaleString()} mi</div>
+                    </li>
+                    <li>
+                        <div className='col-1-of-2 left'><strong>Orbiting Body:</strong></div>
+                        <div className='col-1-of-2 right'>{cad.orbiting_body}</div>
+                    </li>
+                </ul>
+                {/* <p><span className='left'><strong>Close Approach Date Full:</strong></span> <span className='right'>{cad.close_approach_date_full}</span></p>
                 <p>
-                    <strong>Relative Velocity: </strong>
-                    {parseFloat(relVel.kilometers_per_second).toLocaleString()} km/s | {parseFloat(relVel.kilometers_per_hour).toLocaleString()} km/h | {parseFloat(relVel.miles_per_hour).toLocaleString()} mph
+                <div className='col-1-of-2 left'><strong>Relative Velocity: </strong></div>
+                <div className='col-1-of-2 right'>{parseFloat(relVel.kilometers_per_second).toLocaleString()} km/s | {parseFloat(relVel.kilometers_per_hour).toLocaleString()} km/h | {parseFloat(relVel.miles_per_hour).toLocaleString()} mph</div>
                 </p>
                 <p>
-                    <strong>Miss Distance: </strong>
-                    {parseFloat(missDist.astronomical).toLocaleString()} AU | {parseFloat(missDist.lunar).toLocaleString()} LD | {parseFloat(missDist.kilometers).toLocaleString()} km | {parseFloat(missDist.miles).toLocaleString()} mi
+                    <div className='col-1-of-2 left'><strong>Miss Distance: </strong></div>
+                    <div className='col-1-of-2 right'>{parseFloat(missDist.astronomical).toLocaleString()} AU | {parseFloat(missDist.lunar).toLocaleString()} LD | {parseFloat(missDist.kilometers).toLocaleString()} km | {parseFloat(missDist.miles).toLocaleString()} mi</div>
                 </p>
-                <p><strong>Orbiting Body:</strong> {cad.orbiting_body}</p>
-            </>
+                <p><div className='col-1-of-2 left'><strong>Orbiting Body:</strong></div> <div className='col-1-of-2 right'>{cad.orbiting_body}</div></p> */}
+            </div>
             :
                 <p>There is no close approach data available</p>
             }

@@ -4,6 +4,18 @@
   background-color: $color-primary-light;
   font-size: $default-font-size;
   margin: 1rem auto;
-  height: 55vh;
+  height: 43vh;
+
+  .content {
+    height: 34vh;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      margin-left: $padding-in-card;
+    }
+  }
 }
 

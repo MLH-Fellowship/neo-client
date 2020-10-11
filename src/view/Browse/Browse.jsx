@@ -18,7 +18,6 @@ const Browse = (props) =>
             :
                 <h2>There are no Near-Earth Objects available at the moment</h2>
             }
-            
         </div>
     );
 }

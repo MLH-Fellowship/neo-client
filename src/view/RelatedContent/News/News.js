@@ -3,36 +3,32 @@ import {connect} from 'react-redux';
 
 import './News.scss';
 import {fetchNewsThunk} from '../../../state/thunks';
+import Article from './Article/Article';
 
 class News extends React.Component {
 
   componentDidMount() {
     this.props.fetchNews();
-    console.log(this.props)
   }
 
   render() {
     return (
       <div className='News content-section'>
         <h1 className='section-header'>News</h1>
-        {this.props.news.length &&
-        this.props.news.map(article => {
-          return (
-            <div>
-            <img src={article.featured_image} alt=''/>
-            <h3 className='news-headline'>{article.title}</h3>
-            </div>
-          )
-        })
+        {this.props.news.length
+          ? this.props.news.map(article => {
+            return (
+              <Article article={article} />
+            )
+          })
+          : ''
         }
-
       </div>
     )
   }
 }
 
 const mapState = (state) => {
-  // console.log(state)
   return {
     news: state.news.news
   }

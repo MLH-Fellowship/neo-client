@@ -13,6 +13,16 @@
   -moz-border-radius: $border-radius;
   -ms-border-radius: $border-radius;
   -o-border-radius: $border-radius;
+  transition: 0.15s;
+}
+
+.neo-card:hover
+{
+  cursor: pointer;
+  box-shadow: 0 16px 12px 0 rgba(0,0,0,0.5);
+  transform: scale(1.05) translateY(-0.5rem);
+  transition: 0.15s;
+  background-color: $color-accent-blue-dark;
 }
 
 img.neo-card-photo {

@@ -6,7 +6,7 @@
   font-size: $default-font-size;
   padding: $padding-in-card;
   overflow: hidden;
-  margin: 1rem auto;
+  margin-bottom: $padding-in-card;
   border: $border-width solid $border-color;
   border-radius: $border-radius;
   -webkit-border-radius: $border-radius;

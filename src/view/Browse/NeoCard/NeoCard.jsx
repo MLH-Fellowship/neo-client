@@ -17,7 +17,7 @@ const sizeComparison = {
 const sizes = Object.keys(sizeComparison);
 
 const thumbnail = (diameterM) => {
-  let diameter = Math.ceil(diameterM);
+  const diameter = Math.ceil(diameterM);
   let i = 0;
   while (diameter > sizes[i] && i <= sizes.length-1) {
     i++;
@@ -27,8 +27,8 @@ const thumbnail = (diameterM) => {
 
 const NeoCard = (props) => {
   let estDiameter = props.details.estimated_diameter; 
-  let diameterM = estDiameter.meters.estimated_diameter_max - estDiameter.meters.estimated_diameter_min;
-  let diameterF = estDiameter.feet.estimated_diameter_max - estDiameter.feet.estimated_diameter_min;
+  let diameterM = (estDiameter.meters.estimated_diameter_max + estDiameter.meters.estimated_diameter_min) / 2;
+  let diameterF = (estDiameter.feet.estimated_diameter_max + estDiameter.feet.estimated_diameter_min) / 2;
 
   return (
     <div className='NeoCard'>

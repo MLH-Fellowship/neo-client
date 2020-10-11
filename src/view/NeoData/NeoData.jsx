@@ -3,7 +3,7 @@ import React from 'react';
 import './NeoData.scss';
 import './CloseApproachData/CloseApproachData';
 import './OrbitalData/OrbitalData';
-import CloseApproachData from './CloseApproachData/CloseApproachData';
+import CloseApproachDataContainer from './CloseApproachData/CloseApproachDataContainer';
 import OrbitalData from './OrbitalData/OrbitalData';
 
 class NeoData extends React.Component {
@@ -11,7 +11,7 @@ class NeoData extends React.Component {
     return (
       <div className="NeoData content-section col-2-of-4">
         <h1 className='content-section-header'>NEO Data</h1>
-        <CloseApproachData />
+        <CloseApproachDataContainer />
         <OrbitalData />
       </div>
     )

@@ -1,10 +1,10 @@
 import types from "./action_types";
 
 // ACTION CREATORS
-export function selectNeoCard(neoID)
+export function selectNeoCard(neo)
 {
     return {
         type: types.SELECT_NEOCARD,
-        payload: neoID
+        payload: neo
     };
 }

@@ -8,7 +8,7 @@ class NeoCardContainer extends Component
 {
     handleClick = () =>
     {
-        this.props.selectNeoCard(this.props.details.id);
+        this.props.selectNeoCard(this.props.details);
     }
 
     render()
@@ -34,7 +34,7 @@ function mapState(state)
 function mapDispatch(dispatch)
 {
     return {
-        selectNeoCard: (neoID) => dispatch(selectNeoCard(neoID))
+        selectNeoCard: (neo) => dispatch(selectNeoCard(neo))
     };
 }
 

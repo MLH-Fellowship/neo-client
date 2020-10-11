@@ -9,7 +9,7 @@ const OrbitalData = (props) =>
     let orbitID = od ? od.orbit_id : null;
     let firstObserveDate = od ? od.first_observation_date : null;
     let lastObserveDate = od ? od.last_observation_date : null;
-    let orbitObserveDate = od ? od.orbit_observation_date : null;
+    let orbitDetermineDate = od ? od.orbit_determination_date : null;
     let observesUsed = od ? od.observations_used : null;
     let dataArcInDays = od ? od.data_arc_in_days : null;
     let orbitUncertainty = od ? od.orbit_uncertainty : null;
@@ -17,7 +17,7 @@ const OrbitalData = (props) =>
     let jupiterTissInvar = od ? od.jupiter_tisserand_invariant : null;
     let epochOsc = od ? od.epoch_osculation : null;
     let eccentricity = od ? od.eccentricity : null;
-    let semiMajorAxis = od ? od.semiMajorAxis : null;
+    let semiMajorAxis = od ? od.semi_major_axis : null;
     let inclination = od ? od.inclination : null;
     let ascNodeLong = od ? od.ascending_node_longitude : null;
     let orbitPeriod = od ? od.orbital_period : null;
@@ -40,26 +40,26 @@ const OrbitalData = (props) =>
                 <p><strong>Orbit ID: </strong>{orbitID}</p>
                 <p><strong>First Observation Date: </strong>{firstObserveDate}</p>
                 <p><strong>Last Observation Date: </strong>{lastObserveDate}</p>
-                <p><strong>Orbit Observation Date: </strong>{orbitObserveDate}</p>
+                <p><strong>Orbit Determination Date: </strong>{orbitDetermineDate}</p>
                 <p><strong>Data Arc in Days: </strong>{dataArcInDays}</p>
                 <p><strong>Observations Used: </strong>{observesUsed}</p>
-                <p><strong>Orbit Uncertainty: </strong>{orbitUncertainty}</p>
-                <p><strong>Minimum Orbit Intersection: </strong>{parseFloat(minOrbitIntersect).toLocaleString()}</p>
-                <p><strong>Jupiter Tisserand Invariant: </strong>{parseFloat(jupiterTissInvar).toLocaleString()}</p>
-                <p><strong>Epoch Osculation: </strong>{parseFloat(epochOsc).toLocaleString()}</p>
-                <p><strong>Eccentricity: </strong>{parseFloat(eccentricity).toLocaleString()}</p>
-                <p><strong>Semi Major Axis: </strong>{parseFloat(semiMajorAxis).toLocaleString()}</p>
-                <p><strong>Inclination: </strong>{parseFloat(inclination).toLocaleString()}</p>
-                <p><strong>Ascending Node Longitude: </strong>{parseFloat(ascNodeLong).toLocaleString()}</p>
-                <p><strong>Orbital Period: </strong>{parseFloat(orbitPeriod).toLocaleString()}</p>
-                <p><strong>Perihelion Distance: </strong>{parseFloat(periDist).toLocaleString()}</p>
-                <p><strong>Perihelion Argument: </strong>{parseFloat(periArg).toLocaleString()}</p>
-                <p><strong>Aphelion Distance: </strong>{parseFloat(apDist).toLocaleString()}</p>
-                <p><strong>Perihelion Time: </strong>{parseFloat(periTime).toLocaleString()}</p>
-                <p><strong>Mean Anomaly: </strong>{parseFloat(meanAnomaly).toLocaleString()}</p>
-                <p><strong>Mean Motion: </strong>{parseFloat(meanMotion).toLocaleString()}</p>
-                <p><strong>Equinox: </strong>{equinox}</p>
-                <p><strong>Orbit Class Type: </strong>{orbitClassType}</p>
+                <p><strong><a href="https://en.wikipedia.org/wiki/Uncertainty_parameter" target="_blank" rel="noopener noreferrer">Orbit Uncertainty: </a></strong>{orbitUncertainty}</p>
+                <p><strong><a href="https://en.wikipedia.org/wiki/Minimum_orbit_intersection_distance" target="_blank" rel="noopener noreferrer">Minimum Orbit Intersection: </a></strong>{parseFloat(minOrbitIntersect).toLocaleString()}</p>
+                <p><strong><a href="https://en.wikipedia.org/wiki/Tisserand%27s_parameter" target="_blank" rel="noopener noreferrer">Jupiter Tisserand Invariant: </a></strong>{parseFloat(jupiterTissInvar).toLocaleString()}</p>
+                <p><strong><a href="https://en.wikipedia.org/wiki/Osculating_orbit" target="_blank" rel="noopener noreferrer">Epoch Osculation: </a></strong>{parseFloat(epochOsc).toLocaleString()}</p>
+                <p><strong><a href="https://en.wikipedia.org/wiki/Orbital_eccentricity" target="_blank" rel="noopener noreferrer">Eccentricity: </a></strong>{parseFloat(eccentricity).toLocaleString()}</p>
+                <p><strong><a href="https://en.wikipedia.org/wiki/Semi-major_and_semi-minor_axes#Astronomy" target="_blank" rel="noopener noreferrer">Semi Major Axis: </a></strong>{parseFloat(semiMajorAxis).toLocaleString()}</p>
+                <p><strong><a href="https://en.wikipedia.org/wiki/Orbital_inclination" target="_blank" rel="noopener noreferrer">Inclination: </a></strong>{parseFloat(inclination).toLocaleString()}</p>
+                <p><strong><a href="https://en.wikipedia.org/wiki/Orbital_node" target="_blank" rel="noopener noreferrer">Ascending Node Longitude: </a></strong>{parseFloat(ascNodeLong).toLocaleString()}</p>
+                <p><strong><a href="https://en.wikipedia.org/wiki/Orbital_period" target="_blank" rel="noopener noreferrer">Orbital Period: </a></strong>{parseFloat(orbitPeriod).toLocaleString()}</p>
+                <p><strong><a href="https://en.wikipedia.org/wiki/Apsis#Perihelion_and_aphelion" target="_blank" rel="noopener noreferrer">Perihelion Distance: </a></strong>{parseFloat(periDist).toLocaleString()}</p>
+                <p><strong><a href="https://en.wikipedia.org/wiki/Argument_of_periapsis" target="_blank" rel="noopener noreferrer">Perihelion Argument: </a></strong>{parseFloat(periArg).toLocaleString()}</p>
+                <p><strong><a href="https://en.wikipedia.org/wiki/Apsis#Perihelion_and_aphelion" target="_blank" rel="noopener noreferrer">Aphelion Distance: </a></strong>{parseFloat(apDist).toLocaleString()}</p>
+                <p><strong><a href="https://en.wikipedia.org/wiki/Apsis#Time_of_perihelion" target="_blank" rel="noopener noreferrer">Perihelion Time: </a></strong>{parseFloat(periTime).toLocaleString()}</p>
+                <p><strong><a href="https://en.wikipedia.org/wiki/Mean_anomaly" target="_blank" rel="noopener noreferrer">Mean Anomaly: </a></strong>{parseFloat(meanAnomaly).toLocaleString()}</p>
+                <p><strong><a href="https://en.wikipedia.org/wiki/Mean_motion" target="_blank" rel="noopener noreferrer">Mean Motion: </a></strong>{parseFloat(meanMotion).toLocaleString()}</p>
+                <p><strong><a href="https://en.wikipedia.org/wiki/Equinox_(celestial_coordinates)" target="_blank" rel="noopener noreferrer">Equinox: </a></strong>{equinox}</p>
+                <p><strong><a href="https://pdssbn.astro.umd.edu/data_other/objclass.shtml" target="_blank" rel="noopener noreferrer">Orbit Class Type: </a></strong>{orbitClassType}</p>
                 <p><strong>Orbit Class Range: </strong>{orbitClassRange}</p>
                 <p><strong>Orbit Class Description: </strong>{orbitClassDescription}</p>
             </>

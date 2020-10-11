@@ -1,7 +1,7 @@
 
 @import "../../../../public/sass/main.scss";
 
-.contents {
+.neo-card {
   background-color: $color-primary-light;
   font-size: $default-font-size;
   padding: $padding-in-card;
@@ -13,4 +13,22 @@
   -moz-border-radius: $border-radius;
   -ms-border-radius: $border-radius;
   -o-border-radius: $border-radius;
+}
+
+img.neo-card-photo {
+  background: $color-primary;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.neo-card-title {
+  background: $color-primary;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.neo-card-details {
+  background: $color-primary;
+  border-radius: 10px;
+  padding: 0.5rem;
 }

@@ -8,21 +8,21 @@ const sizeComparison = {
   10: 'human-5',
   15: 'bus',
   45: 'bus-3',
-  50: 'plane',
   75: 'bus-5',
-  150: 'plane-3',
-  250: 'plane-5',
+  80: 'plane',
+  240: 'plane-3',
+  350: 'plane-5',
 };
 
 const sizes = Object.keys(sizeComparison);
 
 const thumbnail = (diameterM) => {
-  let diameter = Math.ceil(diameterM);
-  let i = 0;
-  while (diameter > sizes[i] && i <= sizes.length-1) {
-    i++;
+  let largest = 0;
+  for(let i = 1; i < sizes.length; i++)
+  {
+    if(diameterM > sizes[i]) largest = i;
   }
-  return sizeComparison[sizes[i]];
+  return sizeComparison[sizes[largest]];
 };
 
 const NeoCard = (props) => {
@@ -34,7 +34,7 @@ const NeoCard = (props) => {
   return (
     <div className="neo-card">
       <div className='col-1-of-3'>
-        <img src={process.env.PUBLIC_URL + "/assets/images/asteroid-human.png"} 
+        <img src={process.env.PUBLIC_URL + `/assets/images/asteroid-${thumbnail(diameterM)}-192.png`} 
           className="neo-card-photo"
           alt="Asteroid with outline of human overlay"
           width="100%"/>

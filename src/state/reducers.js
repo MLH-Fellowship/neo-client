@@ -3,3 +3,4 @@
 export { counter } from "./counter";
 export { clock } from "./clock";
 export { neo } from "./neo";
+export { neo_card } from "./neo-card";

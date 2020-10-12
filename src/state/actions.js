@@ -2,6 +2,6 @@
 
 export { increment, decrement } from "./counter";
 export { updateTime, updateDate } from "./clock";
-export { fetchBrowsedNeos } from "./neo";
+export { fetchBrowsedNeos, fetchBrowsedNeosReverse } from "./neo";
 export { selectNeoCard } from "./neo-card";
 export { fetchNews } from "./news";

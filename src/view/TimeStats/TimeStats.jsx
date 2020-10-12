@@ -8,7 +8,7 @@ const TimeStats = (props) =>
     return (
         <div className="TimeStats content-section">
             <ClockContainer />
-            <h2>Data updates every 30 minutes</h2>
+            <h2>Data updates every hour</h2>
         </div>
     );
 }

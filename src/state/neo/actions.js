@@ -8,3 +8,11 @@ export function fetchBrowsedNeos(neos)
         payload: neos
     };
 }
+
+export function fetchBrowsedNeosReverse(neos)
+{
+    return {
+        type: types.FETCH_BROWSED_NEOS_REVERSE,
+        payload: neos
+    };
+}

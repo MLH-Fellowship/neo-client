@@ -2,7 +2,8 @@ import types from "./action_types";
 
 const initialState =
 {
-    neos: []
+    neos: [],
+    page: {}
 };
 
 // REDUCER
@@ -13,7 +14,14 @@ const reducer = (state = initialState, action) =>
         case types.FETCH_BROWSED_NEOS:
             return {
                 ...state,
-                neos: state.neos.concat(action.payload)
+                neos: [...state.neos, ...action.payload.near_earth_objects],
+                page: action.payload.page
+            };
+        case types.FETCH_BROWSED_NEOS_REVERSE:
+            return {
+                ...state,
+                neos: [...action.payload.near_earth_objects, ...state.neos],
+                page: action.payload.page
             };
         default:
             return state;

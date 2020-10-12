@@ -43,6 +43,10 @@
     width: calc((100% - #{$padding-in-card}));
     border-bottom: $border-width solid $border-color;
     padding-bottom: $padding-in-card;
+
+    // &:last-child {
+    //   margin-bottom: $gutter-vertical;
+    // }
   }
 }
 

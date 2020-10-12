@@ -1,0 +1,14 @@
+@import '../../../public/sass/main.scss';
+
+.Clock {
+}
+
+.content-section-header {
+  &.time {
+    padding-bottom: 0;
+  }
+  
+  &.date {
+    padding-bottom: 0;
+  }
+}

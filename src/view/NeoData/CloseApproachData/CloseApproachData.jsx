@@ -52,7 +52,7 @@ const template = (cad, relVel, missDist) =>
                 </li>
                 <li>
                     <div className='col-1-of-2 left'><strong>Orbiting Body:</strong></div>
-                    <div className='col-1-of-2 right'>{cad.orbiting_body}</div>
+                    <div className='col-1-of-2 right last'>{cad.orbiting_body}</div>
                 </li>
             </ul>
             <br/>

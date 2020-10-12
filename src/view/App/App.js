@@ -11,14 +11,7 @@ function App()
     return (
         <div className="App">
             <div className="row">
-                <div className='col-1-of-3'>
-                    <h1>NEO Dashboard</h1>
-                </div>
                 <TimeStats />
-                <div className='col-1-of-3'>
-                    <h1>NEO Dashboard</h1>
-                </div>
-
             </div>
             <div className="row">
                 <div className='col-1-of-4'>

@@ -16,7 +16,7 @@ class BrowseContainer extends Component
         return (
             <Browse
                 neos={this.props.neos}
-            />
+                />
         );
     }
 }

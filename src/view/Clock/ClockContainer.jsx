@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 
 import { updateTime, updateDate } from "../../state";
 import Clock from "./Clock";
+import './ClockContainer.scss';
 
 class ClockContainer extends Component
 {
@@ -23,7 +24,7 @@ class ClockContainer extends Component
     render()
     {
         return (
-            <div className="content-section-header">
+            <div className="ClockContainer">
                 <Clock 
                     time={this.props.time}
                     date={this.props.date}

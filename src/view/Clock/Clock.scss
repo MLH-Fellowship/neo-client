@@ -1,0 +1,14 @@
+@import "../../../public/sass/main.scss";
+
+.Clock {
+  .time {
+    padding-bottom: 0;
+  }
+
+  h5 {
+    &.date {
+      font-size: 2rem;
+      font-weight: 200;
+    }
+  }
+}

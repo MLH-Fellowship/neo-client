@@ -2,8 +2,12 @@
 
 .Browse {
   overflow: auto;
+
+  &.content-section {
+    border-top: transparent;
+  }
   
-  .content {
+  &.content {
     height: 70vh;
   }
 }

@@ -20,7 +20,7 @@ class BrowseContainer extends Component
             if(this.props.page.number === this.props.page.total_pages) this.props.fetchBrowsedNeos(0);
             else this.props.fetchBrowsedNeos(this.props.page.number + 1);
         }
-        else if(element.scrollTop === 0)
+        else if(element.scrollTop === 1)
         {
             if(this.props.page.number === 0) this.props.fetchBrowsedNeosReverse(this.props.page.total_pages);
             else this.props.fetchBrowsedNeosReverse(this.props.page.number - 1);

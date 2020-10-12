@@ -14,6 +14,34 @@
     user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
+.header {
+    padding: 2rem 2rem;
+
+    &.content-section {
+        height: 12vh;
+        border: transparent;
+        background-color: transparent;
+        padding: 3rem;
+    }
+}
+
+.name {
+    font-size: 4rem;
+    font-weight: 200;
+}
+
+.logo {
+    max-width: 8vw;
+
+    &.nasa {
+        margin: 0 auto;
+    }
+    
+    &.owl {
+        padding-top: 2rem;
+    }
+}
+
 div::-webkit-scrollbar {
     width: 2px;
 }

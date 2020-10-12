@@ -1,2 +1,9 @@
 @import "../../../public/sass/main.scss";
 
+.TimeStats {
+  margin-bottom: $gutter-vertical;
+
+  .note {
+    font-size: 1.5rem;
+  }
+}

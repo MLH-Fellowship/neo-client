@@ -10,7 +10,7 @@ class NeoData extends React.Component {
   render() {
     return (
       <div className="NeoData content-section col-2-of-4">
-        <h1 className='content-section-header'>NEO Data</h1>
+        <h1 className='content-section-header'>Near Earth Object (NEO) Data</h1>
         <OrbitalDataContainer />
         <CloseApproachDataContainer />
       </div>

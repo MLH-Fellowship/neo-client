@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/neo-client/static/css/main.40c83008.chunk.css",
+    "main.js": "/neo-client/static/js/main.5767e6c6.chunk.js",
+    "main.js.map": "/neo-client/static/js/main.5767e6c6.chunk.js.map",
+    "runtime-main.js": "/neo-client/static/js/runtime-main.670a3ab4.js",
+    "runtime-main.js.map": "/neo-client/static/js/runtime-main.670a3ab4.js.map",
+    "static/js/2.823cf3f0.chunk.js": "/neo-client/static/js/2.823cf3f0.chunk.js",
+    "static/js/2.823cf3f0.chunk.js.map": "/neo-client/static/js/2.823cf3f0.chunk.js.map",
+    "index.html": "/neo-client/index.html",
+    "precache-manifest.b9a50cf0bf37dce09b24bdc7febbf932.js": "/neo-client/precache-manifest.b9a50cf0bf37dce09b24bdc7febbf932.js",
+    "service-worker.js": "/neo-client/service-worker.js",
+    "static/css/main.40c83008.chunk.css.map": "/neo-client/static/css/main.40c83008.chunk.css.map",
+    "static/js/2.823cf3f0.chunk.js.LICENSE.txt": "/neo-client/static/js/2.823cf3f0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.670a3ab4.js",
+    "static/js/2.823cf3f0.chunk.js",
+    "static/css/main.40c83008.chunk.css",
+    "static/js/main.5767e6c6.chunk.js"
+  ]
+}

@@ -46,6 +46,34 @@
   }
 }
 
+@media only screen and (min-width: 0px) {
+  .col-1-of-2 {
+    &.left {
+      margin-bottom: 0rem;
+    }
+  
+    &.right {
+      text-align: left;
+    }
+  }
+}
+
+@media only screen and (min-width: 1885px) {
+  .col-1-of-2 {
+    &.left {
+      margin-bottom: -2rem;
+      
+      a {
+        position: relative;
+      }
+    }
+  
+    &.right {
+      text-align: right;
+    }
+  }
+}
+
 .col-1-of-3 {
   width: calc((100% - 2 * #{$padding-in-card}) / 3);
 }

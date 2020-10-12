@@ -11,8 +11,8 @@ class NeoData extends React.Component {
     return (
       <div className="NeoData content-section col-2-of-4">
         <h1 className='content-section-header'>NEO Data</h1>
-        <CloseApproachDataContainer />
         <OrbitalDataContainer />
+        <CloseApproachDataContainer />
       </div>
     )
   }

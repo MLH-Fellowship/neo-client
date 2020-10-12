@@ -33,9 +33,11 @@ const thumbnail = (diameterM) => {
 
 const NeoCard = (props) => {
   let neoInfo = props.details;
-  let estDiameter = neoInfo.estimated_diameter; 
-  let diameterM = (estDiameter.meters.estimated_diameter_max + estDiameter.meters.estimated_diameter_min) / 2;
-  let diameterF = (estDiameter.feet.estimated_diameter_max + estDiameter.feet.estimated_diameter_min) / 2;
+  let estDiameter = neoInfo ? neoInfo.estimated_diameter : null; 
+  let dm = estDiameter ? estDiameter.meters : null;
+  let df = estDiameter ? estDiameter.feet : null;
+  let diameterM = (dm ? dm.estimated_diameter_max : 0 + dm ? dm.estimated_diameter_min : 1) / 2;
+  let diameterF = (df ? df.estimated_diameter_max : 0 + df ? df.estimated_diameter_min : 1) / 2;
 
   return (
     <div className={`neo-card ${props.selected ? props.selected.id === neoInfo.id ? 'selected' : '' : ''}`} onClick={props.handleClick}>

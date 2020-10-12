@@ -15,15 +15,17 @@ class BrowseContainer extends Component
     {
         let element = event.target;
 
+        // Scrolling to bottom
         if(element.scrollHeight - element.scrollTop === element.clientHeight)
         {
-            if(this.props.page.number === this.props.page.total_pages) this.props.fetchBrowsedNeos(0);
-            else this.props.fetchBrowsedNeos(this.props.page.number + 1);
+            if(this.props.bottomPage.number === this.props.page.total_pages) this.props.fetchBrowsedNeos(0);
+            else this.props.fetchBrowsedNeos(this.props.bottomPage.number + 1);
         }
+        // Scrolling to top
         else if(element.scrollTop === 1)
         {
             if(this.props.page.number === 0) this.props.fetchBrowsedNeosReverse(this.props.page.total_pages);
-            else this.props.fetchBrowsedNeosReverse(this.props.page.number - 1);
+            else this.props.fetchBrowsedNeosReverse(this.props.topPage.number - 1);
         }
     }
 
@@ -43,6 +45,8 @@ function mapState(state)
 {
     return {
         neos: state.neo.neos,
+        topPage: state.neo.topPage,
+        bottomPage: state.neo.bottomPage,
         page: state.neo.page
     };
 }

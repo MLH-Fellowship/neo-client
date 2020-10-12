@@ -7,7 +7,7 @@ const CloseApproachData = (props) =>
     return (
         <div className="CloseApproachData content-section">
             <h2 className='section-header'>Close Approach Data</h2>
-            {props.selected ?
+            {props.selected && props.selected.close_approach_data.length ?
             <div className='content'>
                 {closeApproach(props.selected)}
             </div>

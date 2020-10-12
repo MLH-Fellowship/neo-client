@@ -24,7 +24,7 @@ class BrowseContainer extends Component
         // Scrolling to top
         else if(element.scrollTop === 1)
         {
-            if(this.props.page.number === 0) this.props.fetchBrowsedNeosReverse(this.props.page.total_pages);
+            if(this.props.page.number === 0 || this.props.topPage.number === undefined) this.props.fetchBrowsedNeosReverse(this.props.page.total_pages - 1);
             else this.props.fetchBrowsedNeosReverse(this.props.topPage.number - 1);
         }
     }

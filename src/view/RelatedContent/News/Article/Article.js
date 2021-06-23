@@ -10,9 +10,9 @@ const Article = (props) => {
   return (
     <div className='Article'>
       <a href={props.article.url}>
-        <img src={props.article.featured_image} alt=''/>
+        <img src={props.article.imageUrl} alt=''/>
         <h3 className='title'>{props.article.title}</h3>
-        <p>{props.article.news_site_long}   |   {date(props.article.published_date)}</p>
+        <p>{props.article.newsSite}   |   {date(props.article.publishedAt)}</p>
       </a>
     </div>
   )

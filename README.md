@@ -1,5 +1,9 @@
 # neo-client
 
+This is the frontend repo for **NEO Dashboard**. Check out the inspiration behind this project, how this was built, and a demo of the app here: https://devpost.com/software/neo-dashboard-z160cl
+
+NEO Dashboard is a SpaceX-themed dashboard featuring a list of asteroids to browse and provides specific details about each asteroid upon selection, such as close approach and orbital data. We also provide users with recently published space news articles, and a list of handpicked featured videos that we think users might enjoy. During a time of what may be considered a second space race, we felt that this type of application will be extremely relevant in the foreseeable future, extending to many fields such as asteroid mining, space tourism and spaceflight safety.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts

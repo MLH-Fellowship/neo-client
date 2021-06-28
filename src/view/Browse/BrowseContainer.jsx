@@ -6,9 +6,22 @@ import Browse from "./Browse";
 
 class BrowseContainer extends Component
 {
-    componentDidMount()
-    {
-        this.props.fetchBrowsedNeos(0);
+    componentDidMount() {
+        // while (this.props.neos.length === 0) {
+            this.props.fetchBrowsedNeos(0);
+        //     if (this.props.neos.length) {
+        //         return;
+        //     }
+        // }
+        if (!this.props.neos.length) {
+            this.neosListId = setInterval(() => {
+                this.props.fetchBrowsedNeos(0)
+            }, 1000);
+        }
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.neosListId);
     }
 
     handleScroll = (event) =>

@@ -7,12 +7,8 @@ import Browse from "./Browse";
 class BrowseContainer extends Component
 {
     componentDidMount() {
-        // while (this.props.neos.length === 0) {
-            this.props.fetchBrowsedNeos(0);
-        //     if (this.props.neos.length) {
-        //         return;
-        //     }
-        // }
+        this.props.fetchBrowsedNeos(0);
+        
         if (!this.props.neos.length) {
             this.neosListId = setInterval(() => {
                 this.props.fetchBrowsedNeos(0)

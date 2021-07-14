@@ -8,16 +8,6 @@ class BrowseContainer extends Component
 {
     componentDidMount() {
         this.props.fetchBrowsedNeos(0);
-        
-        if (!this.props.neos.length) {
-            this.neosListId = setInterval(() => {
-                this.props.fetchBrowsedNeos(0)
-            }, 1000);
-        }
-    }
-
-    componentWillUnmount() {
-        clearInterval(this.neosListId);
     }
 
     handleScroll = (event) =>
@@ -40,6 +30,10 @@ class BrowseContainer extends Component
 
     render()
     {
+        while (!this.props.neos.length) {
+            this.props.fetchBrowsedNeos(0);
+        }
+        
         return (
             <div onScroll={this.handleScroll}>
                 <Browse

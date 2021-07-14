@@ -9,17 +9,7 @@ class News extends React.Component {
 
   componentDidMount() {
     this.props.fetchNews();
-
-    if (!this.props.news.length) {
-      this.newsListId = setInterval(() => {
-          this.props.fetchNews()
-      }, 1000);
-    }
   }
-
-  componentWillUnmount() {
-    clearInterval(this.newsListId);
-}
 
   render() {
     return (

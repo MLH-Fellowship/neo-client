@@ -30,15 +30,6 @@ class BrowseContainer extends Component
 
     render()
     {
-        while (!this.props.neos.length) {
-            if (this.interval) {
-                clearInterval(this.interval);
-            }
-            this.interval = setInterval(() => {
-                this.props.fetchBrowsedNeos(0)
-            }, 5000)
-        }
-
         return (
             <div onScroll={this.handleScroll}>
                 <Browse
